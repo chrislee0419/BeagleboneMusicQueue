@@ -341,3 +341,6 @@ healthchecksdb
 
 # CMake out folder
 out/
+
+# remove the folder that contains my old C reference project
+reference/
