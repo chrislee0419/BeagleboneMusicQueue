@@ -1,0 +1,40 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x86-Debug",
+      "generator": "Visual Studio 16 2019",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v:minimal",
+      "ctestCommandArgs": "",
+      "variables": [],
+      "intelliSenseMode": "windows-msvc-x86"
+    },
+    {
+      "name": "ARM-Debug",
+      "generator": "Unix Makefiles",
+      "configurationType": "Debug",
+      "cmakeExecutable": "/usr/local/bin/cmake",
+      "remoteCopySourcesExclusionList": [ ".vs", ".git", "out" ],
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-std=c++11",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "linux_arm" ],
+      "remoteMachineName": "${defaultRemoteMachineName}",
+      "remoteCMakeListsRoot": "$HOME/${projectDirName}/${workspaceHash}",
+      "remoteBuildRoot": "$HOME/${projectDirName}/${workspaceHash}/out/build/${name}",
+      "remoteInstallRoot": "$HOME/${projectDirName}/${workspaceHash}/out/install/${name}",
+      "remoteCopySources": true,
+      "rsyncCommandArgs": "-t --delete --delete-excluded",
+      "remoteCopyBuildOutput": false,
+      "remoteCopySourcesMethod": "sftp",
+      "addressSanitizerRuntimeFlags": "detect_leaks=0",
+      "variables": [],
+      "intelliSenseMode": "linux-gcc-arm",
+      "cmakeToolchain": "$HOME/${projectDirName}/${workspaceHash}/linux-toolchain.cmake"
+    }
+  ]
+}
