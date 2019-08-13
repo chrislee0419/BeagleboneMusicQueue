@@ -20,7 +20,7 @@
       "cmakeExecutable": "/usr/local/bin/cmake",
       "remoteCopySourcesExclusionList": [ ".vs", ".git", "out" ],
       "cmakeCommandArgs": "",
-      "buildCommandArgs": "-std=c++11",
+      "buildCommandArgs": "",
       "ctestCommandArgs": "",
       "inheritEnvironments": [ "linux_arm" ],
       "remoteMachineName": "${defaultRemoteMachineName}",
